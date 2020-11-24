@@ -10,9 +10,10 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(student_params)
     if @student.save
-      flash[:succes] = "You have succesfully Sign Up"
+      flash[:notice] = "You have succesfully Sign Up"
       redirect_to root_path
     else
+      flash
       render 'new'
     end
   end
