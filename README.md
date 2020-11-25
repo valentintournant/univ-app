@@ -1,24 +1,17 @@
-# README
+# Univ App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Univ App is an application that allows you to follow Your different courses at your University!
+I did not upload it only with heroku. But this project allowed me to consolidate my skills and discover new things!
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Version de Ruby: Ruby 2.6.6p146
+- Version de Rails: Rails 6.0.3.2
+```
+git clone git@github.com:valentintournant/finance-tracker.git
+cd univ-app
+touch .env
+bundle install
+yarn install
+rails db:drop db:create db:migrate db:seed
+``
